@@ -108,7 +108,7 @@ printf -- '
 With the bucket, roles, policies and the server creation complete, let us create a user on our new server.
 Before proceeding, you should already have a public/private key pair.\n';
 read -p "Please enter a username for the sftp user: " sftpusername
-read -p "Please enter/paste the public key for this user: " publickey
+read -p "Please enter/paste the public key for this user (This needs to be an ssh publickey starting with "ssh-rsa"): " publickey
 echo $publickey > public.key
 printf '\n'
 printf -- 'Creating user...\n';
