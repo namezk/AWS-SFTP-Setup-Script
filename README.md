@@ -1,7 +1,7 @@
 # AWS-SFTP-Setup-Script
 
 
-Amazon Web Services now offers SFTP as a service; To use it, you need to setup a few resources on the back end; This script automates that for you.
+Amazon Web Services now offers SFTP as a service; To use it, you need to setup a few resources on the back end; This script simplifies that process for you.
 
 
 ## Prerequisites
@@ -19,5 +19,5 @@ The script walks you through creating the resources needed to setup an AWS Trans
 - An S3 bucket
 - An IAM role used by the SFTP server to access the bucket
 - An IAM role used by the SFTP server to log activity to CloudWatch Logs
-- The actual Transfer server instance
+- The actual Transfer server instance configured with to use the resources above
 - An SFTP user on the created server
