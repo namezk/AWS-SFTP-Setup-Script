@@ -6,7 +6,8 @@ if [ ${#@} -ne 0 ] && [ "${@#"--help"}" = "" ]; then
   exit 0;
 fi;
 printf -- '
-This simple script helps you setup an AWS Transfer server for SFTP the easy way, just follow the prompts to create all the AWS resources necessary.
+https://github.com/namezk/AWS-SFTP-Setup-Script
+This script helps you setup an AWS Transfer for SFTP the easy way, follow the prompts to create all the AWS resources necessary.
 Note: The script requires an up-to-date awscli with the right permissions.\n\n';
 read -p "Please specify the name of the awscli profile you'd like to use:" profile
 printf '\n'
@@ -125,6 +126,10 @@ echo '- A Transfer server: ' $serverid
 echo '- An SFTP user: ' $sftpusername
 echo ''
 echo 'All SFTP activity logs will be located in CloudWach Logs under /aws/transfer/'$serverid
+echo ''
+echo ''
+https://github.com/namezk/AWS-SFTP-Setup-Script
+echo ''
 # Remove the temp files
 rm -f cw-transfer-role-policy.json
 rm -f transfer-trust-relationship.json
