@@ -21,3 +21,7 @@ The script walks you through creating the resources needed to setup an AWS Trans
 - An IAM role used by the SFTP server to log activity to CloudWatch Logs
 - The actual Transfer server instance configured with to use the resources above
 - An SFTP user on the created server
+
+### Solution Diagram
+
+![alt text](https://github.com/namezk/AWS-SFTP-Setup-Script/blob/master/SFTP.png "Solution diagram")
